@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- INI LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globals.css">
+    <title>REGISTRASI!</title>
+  </head>
+  <body>
+    <!-- AWAL Login Dan Registrasi -->
+    <div class="container">
+      <div class="row">
+        <!-- AWAL REGISTRASI -->
+        <div class="col-xs-12 col-sm-6 col-lg-6">
+          <div class="box-register">
+              <h1 class="text-center">Registrasi</h1>
+              <form>
+                <label for="Nama">Nama</label>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nama Depan">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nama Belakang">
+                  </div>
+                </div>
+              <div class="form-group">
+                <label for="EmailAdress">Email address</label>
+                <input type="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <label for="InputPassword">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group col">
+                  <label for="InputPassword">Ulang Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Ulang Password">
+                </div>
+              </div>
+              <p>Tanggal Lahir</p>
+              <div class="form-row">
+                <select class="form-control form-control-sm col-3 col" id="tanggal">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+                <select class="form-control form-control-sm col-3 col" id="bulan">
+                  <option>Januari</option>
+                  <option>Februari</option>
+                  <option>Maret</option>
+                  <option>April</option>
+                  <option>Mei</option>
+                  <option>Juni</option>
+                  <option>Juli</option>
+                  <option>Agustus</option>
+                  <option>September</option>
+                  <option>Oktober</option>
+                  <option>November</option>
+                  <option>Desember</option>
+                </select>
+                <select class="form-control form-control-sm col-3 col" id="tahun">
+                  <option value="Tahun">Tahun</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Textarea">Bio</label>
+                <textarea class="form-control" id="bio" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">REGISTRASI</button>
+              <p class="text-center">Sudah Punya Akun ?  <a href="index.html">Login Disini</a></p>
+            </form>
+          </div>
+        </div>
+        <!-- END REGISTRASI -->
+      </div>
+    </div>
+    <!-- END Login  Dan Registrasi -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      var start = "Tahun";
+      var start1 = 1945;
+      var end = new Date().getFullYear();
+      var options = "Tahun";
+      for(var year = start1 ; year <=end; year++){
+        options += "<option>"+ year +"</option>";
+      }
+      document.getElementById("tahun").innerHTML = options;
+    </script>
+  </body>
+</html>
